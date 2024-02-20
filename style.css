@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.road{
+    width: 100%;
+    height: auto;
+}
+
+.car{
+    position: fixed;
+    top: 21rem;
+    left: 0;
+    height: 10rem;
+}
+.trafficLight{
+    position: fixed;
+    right: 6rem;
+    top: 5rem;
+}
+.trafficLight .lights{
+    height: 10rem;
+    width: 3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    padding: .6rem;
+}
+.trafficLight .lights .redLight{
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    border-radius: 100%;
+    margin:1rem auto;
+
+}
+.trafficLight .lights .greenLight{
+    width: 2rem;
+    height: 2rem;
+    background-color: green;
+    border-radius: 100%;
+    margin: 4rem auto;
+
+}
+.trafficLight .stick{
+    height: 10rem;
+    width: 0.6rem;
+    background-color: black;
+    margin-left: 1.8rem;
+}
+.car {
+    width: 300px;
+    height: 100px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+  }
+  
+  .move-right {
+    animation: moveRight 5s linear infinite; /* Change 'infinite' to 'forwards' */
+  }
+  
+  @keyframes moveRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 105%; /* Adjust so it stops at 10% from the right */
+    }
+  }
+  
+  .stop-here {
+    left: 10%; /* Stop at 10% from the right */
+    transform: translateY(-50%) !important; /* Ensure it stays centered vertically */
+  }
+  
+
+.trafficLight .lights .offLight{
+    background-color: black;
+  }
