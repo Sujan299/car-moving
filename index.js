@@ -9,12 +9,10 @@ function addClass() {
     greenLight.classList.toggle('offLight');
 
     if (!redLight.classList.contains('offLight')) {
-        // Red light is on; stop the car
-        car.classList.remove('move-right'); // Ensure car is not moving
-        car.classList.add('stop-here'); // Explicitly stop the car
+        car.classList.remove('move-right');
+        car.classList.add('stop-here'); 
     } else if (!greenLight.classList.contains('offLight')) {
-        // Green light is on; move the car
-        car.classList.remove('stop-here'); // Ensure car is not stopped
-        car.classList.add('move-right'); // Move the car
+        car.classList.remove('stop-here'); 
+        car.classList.add('move-right'); 
     }
 }

@@ -70,7 +70,7 @@
   }
   
   .stop-here {
-    left: 10%; /* Stop at 10% from the right */
+    left: 20%; /* Stop at 10% from the right */
     transform: translateY(-50%) !important; /* Ensure it stays centered vertically */
   }
   
